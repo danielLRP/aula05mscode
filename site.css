@@ -18,6 +18,10 @@ header {
     justify-content: space-between;
     background-color: rgb(5, 4, 36);
     color: rgb(217, 209, 209);
+    box-shadow: 6px 0 2em #888;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
 .botao-de-busca {
@@ -46,16 +50,20 @@ header {
     color: white;
     border-radius: 2px;
     border: none;
+    cursor: pointer;
 }
 
 .botao-de-busca input {
     padding: 6px;
     border-radius: 2px;
     border: none;
+    outline: none;
+    background-color: rgb(241, 240, 239);
 }
 
 .bem-vindo h2 {
     padding: 35px 12px 20px 12px;
+    color: #444;
 }
 
 .imagem-loja {
@@ -73,6 +81,7 @@ header {
 
 .categorias h1 {
     padding: 20px;
+    color: #444;
 }
 
 .categorias ul {
@@ -92,10 +101,15 @@ header {
     margin: 0 20px 0 20px;
 }
 
+.produtos h1 {
+    color: #444;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 35px;
+    box-shadow: 2px 2px 1em #999;
 }
 
 table th {
@@ -111,12 +125,26 @@ table td {
     padding: 0;
 }
 
+.formulario {
+    box-shadow: 6px 6px 2em #888;
+    padding: 20px;
+    border-radius: 8px;
+}
+
 .contato {
     margin: 50px 20px 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.telefone {
+    display: flex;
+    align-items: center;
 }
 
 .contato h1 {
     margin-bottom: 35px;
+    color: #444;
 }
 
 #nome {
@@ -126,6 +154,7 @@ table td {
     border-radius: 5px;
     border: none;
     background-color: rgb(241, 240, 239);
+    /*box-shadow: 4px 4px 2em #888;*/
 }
 
 #email {
@@ -135,6 +164,7 @@ table td {
     border-radius: 5px;
     border: none;
     background-color: rgb(241, 240, 239);
+    /*box-shadow: 4px 4px 2em #888;*/
 }
 
 #assunto {
@@ -144,6 +174,7 @@ table td {
     border-radius: 5px;
     border: none;
     background-color: rgb(241, 240, 239);
+    /*box-shadow: 4px 4px 2em #888;*/
 }
 
 
@@ -154,6 +185,7 @@ textarea {
     border-radius: 5px;
     border: none;
     background-color: rgb(241, 240, 239);
+    /*box-shadow: 4px 4px 2em #888;*/
 }
 
 .button-form {
@@ -164,6 +196,8 @@ textarea {
     color: white;
     font-size: 1rem;
     background-color: rgb(44, 42, 105);
+    box-shadow: 4px 4px 4px #888;
+    cursor: pointer;
 }
 
 .rodape {
@@ -187,4 +221,3 @@ textarea {
 .rodape p {
     margin-top: 15px;
 }
-
