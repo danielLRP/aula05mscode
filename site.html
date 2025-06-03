@@ -8,113 +8,117 @@
 </head>
 <body>
     <header>
-                <span><h1>Meu site</h1></span>
-                <nav class="navegation1">
-                    <ul>
-                        <a href="#inicio">Início</a>
-                        <a href="#produtos">Produtos</a>
-                        <a href="#categotias">Categorias</a>
-                        <a href="#contatos">Contatos</a>
-                    </ul>
-                </nav>
+        <span><h1>Minha loja</h1></span>
+        <nav class="navegation1">
+            <ul>
+                <a href="#inicio">Início</a>
+                <a href="#categorias">Categorias</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#contatos">Contatos</a>
+            </ul>
+        </nav>
                 
-                <div class="botao-de-busca">
-                    <input type="text" id="busca" name="busca" required>
-                    <button id="buscar">Buscar</button>
-                </div>
-        </header>
-        <hr>
-    <div>
-        <main>
-            <div class="bem-vindo">
-                <h2>Bem-vindo à nossa loja!</h2>
-                <span class="imagem-loja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvNOK6Ivq3pu7pPSyOTE6w4AOqUtoZU4O4gg&s" alt="Imagem da nossa loja" width="600" height="300"></span>
-            </div>
-<br><hr>
-            <section class="categorias">
-                <h1>Categorias</h1>
-                <ul>
-                    <li>Roupas</li>
-                    <li>Eletrônicos</li>
-                    <li>Livros</li>
-                    <li>Acessórios</li>
-                </ul>
-                <br>
-            </section>
-            <section class="produtos">
+        <div class="botao-de-busca">
+            <input placeholder="Pesquisar..." type="text" id="busca" name="busca">
+            <button id="buscar">Buscar</button>
+        </div>
+    </header>
+    <hr>
+
+    <main>
+        <div id="inicio" class="bem-vindo">
+            <h2>Bem-vindo à nossa loja!</h2>
+            <span class="imagem-loja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvNOK6Ivq3pu7pPSyOTE6w4AOqUtoZU4O4gg&s" alt="Imagem da nossa loja" width="600" height="300"></span>
+        </div>
+        <br><hr>
+
+        <section id="categorias" class="categorias">
+            <h1>Categorias</h1>
+            <ul>
+                <li>Roupas</li>
+                <li>Eletrônicos</li>
+                <li>Livros</li>
+                <li>Acessórios</li>
+            </ul>
+            <br>
+        </section>
+        <section id="produtos" class="produtos">
                 <h1>Nossos produtos</h1>
-                <table border="1">
-                    <tr>
-                        <th>Nome</th>
-                        <th>Valor</th>
-                        <th>Foto</th>
-                        
-                    </tr><br>
-                    <tr>
-                        <td>Camiseta</td>
-                        <td>R$ 49,90</td>
-                        <td><img src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_azul_petroleo_915_1_b0aa7489d035f455e5f06825c141f82d.jpg" alt="Foto da camiseta" width="200px" height="100px"></td>
-                    </tr><br>
-                    <tr>
-                        <td>Fone de ouvido</td>
-                        <td>R$ 89,90</td>
-                        <td><img src="https://martinelloeletrodomesticos.fbitsstatic.net/img/p/fone-de-ouvido-jbl-t520bt-preto-79344/265936.jpg?w=482&h=482&v=no-change&qs=ignore" alt="Foto do fone de ouvido" width="200px" height="100px"></td>
-                    </tr><br>
-                    <tr>
-                        <td>Livro de HTML</td>
-                        <td>R$ 39,90</td>
-                        <td class="img"><img src="https://a-static.mlcdn.com.br/1500x1500/livro-as-48-leis-do-poder-robert-greene/magazineluiza/232506000/c764ccff4a8f5f3b762cf0836728d47b.jpg" alt="Foto do livro" width="200px" height="200px"></td>
-                    </tr>
-                </table>
-                <br>
-            </section>
-            <hr>
-            <section class="contato">
+            <table border="1">
+                <tr>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                    <th>Foto</th>
+                </tr><br>
+                <tr>
+                    <td>Camiseta</td>
+                    <td>R$ 49,90</td>
+                    <td><img src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_azul_petroleo_915_1_b0aa7489d035f455e5f06825c141f82d.jpg" alt="Foto da camiseta" width="200px" height="100px"></td>
+                </tr><br>
+                <tr>
+                    <td>Fone de ouvido</td>
+                    <td>R$ 89,90</td>
+                    <td><img src="https://martinelloeletrodomesticos.fbitsstatic.net/img/p/fone-de-ouvido-jbl-t520bt-preto-79344/265936.jpg?w=482&h=482&v=no-change&qs=ignore" alt="Foto do fone de ouvido" width="200px" height="100px"></td>
+                </tr><br>
+                <tr>
+                    <td>Livro de HTML</td>
+                    <td>R$ 39,90</td>
+                    <td class="img"><img src="https://a-static.mlcdn.com.br/1500x1500/livro-as-48-leis-do-poder-robert-greene/magazineluiza/232506000/c764ccff4a8f5f3b762cf0836728d47b.jpg" alt="Foto do livro" width="200px" height="200px"></td>
+                </tr>
+            </table>
+            <br>
+        </section>
+
+        <section id="contatos" class="contato">
+            <div class="formulario">
                 <form action="#" method="post">
                     <h1>Fale conosco</h1>
-                        <div>
-                            <input placeholder="Nome" type="text" id="nome" name="nome" required>
-                            <br>
-                        </div>
+                    <div>
+                        <input placeholder="Nome" type="text" id="nome" name="nome" required>
                         <br>
+                    </div>
+                    <br>
 
-                        <div>
-                            <input placeholder="E-mail" type="email" id="email" name="email" required>
-                            <br>
-                        </div>
+                    <div>
+                        <input placeholder="E-mail" type="email" id="email" name="email" required>
                         <br>
+                    </div>
+                    <br>
 
-                        <div>
-                            <input placeholder="Assunto" type="text" id="assunto" name="assunto" required>
-                            <br>
-                        </div>
+                    <div>
+                        <input placeholder="Assunto" type="text" id="assunto" name="assunto" required>
                         <br>
+                    </div>
+                    <br>
                                 
-                        <div>
-                            <textarea placeholder="Mensagem" name="mensage" id="mensage"></textarea>
-                            <br>
-                        </div>
+                    <div>
+                        <textarea placeholder="Mensagem" name="mensage" id="mensage"></textarea>
                         <br>
-                        <button class="button-form">Enviar</button>
+                    </div>
+                    <br>
+                    <button class="button-form">Enviar</button>
                 </form>
-                <br>
-            </section>
-            <br>
-            <div>
-                <footer class="rodape">
-                    <h1>Redes sociais</h1>
-                            <nav class="redes-sociais">
-                                <ul>
-                                    <a href="#instagram">Instagram</a> |
-                                    <a href="#x">X</a> |
-                                    <a href="#linkedin">Linkedin</a>
-                                </ul>
-                            </nav>
-                    <p>2025 Minha loja. Todos os direitos reservados</p>
-                </footer>
             </div>
-            
-        </main>
-    </div>
+
+            <span class="telefone">
+                <img src="https://thumbs.dreamstime.com/b/imagem-lisa-do-estilo-da-ilustra%C3%A7%C3%A3o-vetor-cor-preto-%C3%ADcone-de-smartphone-simples-liso-141616283.jpg" alt="" width="300px" height="300px">
+            </span>
+            <br>
+        </section>
+        <br>
+    </main>
+
+    <footer class="rodape">
+        <h1>Redes sociais</h1>
+        <nav class="redes-sociais">
+            <ul>
+                <a href="#instagram">Instagram</a> |
+                <a href="#x">X</a> |
+                <a href="#linkedin">Linkedin</a>
+            </ul>
+        </nav>
+        <p>2025 Minha loja. Todos os direitos reservados</p>
+    </footer>
+    
 </body>
 </html>
