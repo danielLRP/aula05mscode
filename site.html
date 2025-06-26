@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Loja</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -23,52 +24,301 @@
             <button type="submit" id="buscar">Buscar</button>
         </div>
     </header>
-    <hr>
 
     <main>
         <div id="inicio" class="bem-vindo">
             <h2>Bem-vindo à nossa loja!</h2>
-            <span class="imagem-loja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvNOK6Ivq3pu7pPSyOTE6w4AOqUtoZU4O4gg&s" alt="Imagem da nossa loja" width="600" height="300"></span>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://blog.lojafreeway.com.br/wp-content/uploads/Como-escolher-camisetas-masculinas_-Dicas-e-looks-para-usar_.jpg" class="d-block w-100" alt="..." height="600px">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="color: black;">Compre camisetas de todas as cores e tamanhos!</h5>
+                      <p style="color: black;">Nossas camisetas são muito boas e com uma ótima tecnologia. Não deixa odor, não amassa e não deixa marca de suor.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.unasp.br/eadadventista/2021/11/10113544/Jogos-digitais-1200x600.jpg"" class="d-block w-100" alt="..." height="600px">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Vários Aparelhos Eletrônicos!</h5>
+                      <p>Os aparelhos eletrônicos que vendemos em nossa loja são de ótima qualidade, e entrega o que há de melhor em tecnologia e desempenho</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://quelivrocomprar.com.br/wp-content/uploads/2021/04/Livros-Sobre-Artes-1200x600.jpg" class="d-block w-100" alt="..." height="600px">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Livros para ler e se aprofundar!</h5>
+                      <p>Livros servem para nos deixar mais bem informados sobre assuntos diversos, sejam eles motivacionais, desenvolvimento pessaoal e mais...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://garagemfanem.com.br/wp-content/uploads/2023/06/As-novidades-em-acessorios-para-motocicletas-01-1-1200x600.jpg" class="d-block w-100" alt="..." height="600px">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Acessórios de todos os tipos!</h5>
+                      <p>Compre nossos acessórios, aqui vc não se arrepende da sua compra, tem acessório para moto, carro, cozinha, banheiro e muito mais...</p>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
         <br><hr>
 
-        <section id="categorias" class="categorias">
-            <h1>Categorias</h1>
-            <ul>
-                <li>Roupas</li>
-                <li>Eletrônicos</li>
-                <li>Livros</li>
-                <li>Acessórios</li>
-            </ul>
+        <section id="categorias" class="categoriasProdutos">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias de produtos
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#camisetas">Camisetas</a></li>
+                  <li><a class="dropdown-item" href="#eletronicos">Eletrônicos</a></li>
+                  <li><a class="dropdown-item" href="#livros">Livros</a></li>
+                  <li><a class="dropdown-item" href="#acessorios">Acessórios</a></li>
+                </ul>
+              </div>
             <br>
         </section>
         <section id="produtos" class="produtos">
                 <h1>Nossos produtos</h1>
-            <table border="1">
-                <tr>
-                    <th>Nome</th>
-                    <th>Valor</th>
-                    <th>Foto</th>
-                </tr><br>
-                <tr>
-                    <td>Camiseta</td>
-                    <td>R$ 49,90</td>
-                    <td><img src="https://images.tcdn.com.br/img/img_prod/947450/camiseta_basic_color_azul_petroleo_915_1_b0aa7489d035f455e5f06825c141f82d.jpg" alt="Foto da camiseta" width="200px" height="100px"></td>
-                </tr><br>
-                <tr>
-                    <td>Fone de ouvido</td>
-                    <td>R$ 89,90</td>
-                    <td><img src="https://martinelloeletrodomesticos.fbitsstatic.net/img/p/fone-de-ouvido-jbl-t520bt-preto-79344/265936.jpg?w=482&h=482&v=no-change&qs=ignore" alt="Foto do fone de ouvido" width="200px" height="100px"></td>
-                </tr><br>
-                <tr>
-                    <td>Livro de HTML</td>
-                    <td>R$ 39,90</td>
-                    <td class="img"><img src="https://a-static.mlcdn.com.br/1500x1500/livro-as-48-leis-do-poder-robert-greene/magazineluiza/232506000/c764ccff4a8f5f3b762cf0836728d47b.jpg" alt="Foto do livro" width="200px" height="200px"></td>
-                </tr>
-            </table>
+                <div class="catalogo-de-produtos" id="camisetas">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://loja.comerciomix.com.br/media/catalog/product/cache/fb4f878514d02efd710032ded901d118/c/a/camiseta-azul-royal-para-sublima_o-tradicional_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Camisa azul</h5>
+                          <p class="card-text">Essa camisa possui uma tecnologia que não deixa marca de suor, não amassa e é melhor que as camisas da inseider.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://loja.comerciomix.com.br/media/catalog/product/cache/fb4f878514d02efd710032ded901d118/c/a/camiseta-lil_s-para-sublima_o-poli_ster-100_-tradicional-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Camisa lilás</h5>
+                          <p class="card-text">Essa camisa possui uma tecnologia que não deixa marca de suor, não amassa e é melhor que as camisas da inseider.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://loja.comerciomix.com.br/media/catalog/product/cache/fb4f878514d02efd710032ded901d118/c/a/camiseta-branca-para-sublima_o-poli_ster-100_-tradicional-2_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Camisa Branca</h5>
+                          <p class="card-text">Essa camisa possui uma tecnologia que não deixa marca de suor, não amassa e é melhor que as camisas da inseider.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://loja.comerciomix.com.br/media/catalog/product/cache/fb4f878514d02efd710032ded901d118/a/m/amarela1_1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Camisa amarela</h5>
+                          <p class="card-text">Essa camisa possui uma tecnologia que não deixa marca de suor, não amassa e é melhor que as camisas da inseider.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://loja.comerciomix.com.br/media/catalog/product/cache/fb4f878514d02efd710032ded901d118/c/a/camisa-tradicional-azul-bebe.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Camisa azul bebê</h5>
+                          <p class="card-text">Essa camisa possui uma tecnologia que não deixa marca de suor, não amassa e é melhor que as camisas da inseider.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://loja.comerciomix.com.br/media/catalog/product/cache/fb4f878514d02efd710032ded901d118/c/a/camiseta-verde-neon-para-sublima_o-poli_ster-100_-tradicional-5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Camisa verde</h5>
+                          <p class="card-text">Essa camisa possui uma tecnologia que não deixa marca de suor, não amassa e é melhor que as camisas da inseider.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalogoDeProdutos-coluna2" id="eletronicos">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://files.tecnoblog.net/wp-content/uploads/2025/01/iphone-16-ultramarino-1-700x700.png" class="card-img-top" alt="...">
+                        <div class="card-body" style="height: 262px;">
+                          <h5 class="card-title">Iphone 16</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nam illo, aperiam quas ex ullam, expedita porro illum voluptatum quos beatae? Aliquam, voluptates quam veniam in nisi fuga laborum reprehenderit!</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                      <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://files.tecnoblog.net/wp-content/uploads/2025/01/galaxy-s25-ultra-titanio-cinza-700x700.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Samsung S25 Ultra</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ducimus sit, id officia voluptate vitae. Esse laborum ducimus consequatur atque excepturi inventore, provident eius nihil dicta fugit ea aspernatur cumque!</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                      <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://commshop.com.br/media/catalog/product/cache/d415a6fe701c7de230e1a2b55cfa37d5/n/o/novo_projeto_71_.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">TV LG 65'</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ducimus sit, id officia voluptate vitae. Esse laborum ducimus consequatur atque excepturi inventore, provident eius nihil dicta fugit ea aspernatur cumque!</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                      <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://a-static.mlcdn.com.br/1500x1500/ar-condicionado-split-inverter-gree-hi-wall-eco-garden-9000-btus-frio-gwc09qa-d3dnb8m-i-220v/dufrio/100251079/932688414f12d513b06b561e1e212ba4.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Ar-condicionado GREE</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ducimus sit, id officia voluptate vitae. Esse laborum ducimus consequatur atque excepturi inventore, provident eius nihil dicta fugit ea aspernatur cumque!</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                      <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://multilojaonline.vtexassets.com/arquivos/ids/244858-700-700?v=638513052181870000&width=700&height=700&aspect=true" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Geladeira</h5>
+                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, quia? Odit illo, cum assumenda, doloremque consequatur id officia asperiores atque autem quos amet iure sunt voluptatum minus suscipit repellat tempore!</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                      <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.eletrokoch.com.br/media/catalog/product/4/-/4-7898578153562.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Caixa de som</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus illo distinctio necessitatibus velit quae, tempore dicta repellendus unde quisquam. Rerum, consequatur aliquam. Sequi, iure porro! Reprehenderit eveniet quaerat deserunt explicabo.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalogoLivros" id="livros">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://m.media-amazon.com/images/I/511yAViZiZL._UF1000,1000_QL80_.jpg" class="card-img-top" alt="..." height="340px">
+                        <div class="card-body">
+                          <h5 class="card-title">Hábitos Atômicos</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam doloremque quo alias impedit ut quia, placeat saepe fugiat a cumque reprehenderit. Rem praesentium officiis tenetur tempore, obcaecati voluptatum eum.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://a-static.mlcdn.com.br/1500x1500/livro-as-48-leis-do-poder/magazineluiza/089063700/7aa00cc9749239e603ca89191410edcb.jpg" class="card-img-top" alt="..." height="340px">
+                        <div class="card-body">
+                          <h5 class="card-title">As 48 Leis do Poder</h5>
+                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, deserunt voluptates, sit ipsum corporis harum atque illum laudantium ipsam eum assumenda obcaecati velit unde esse laboriosam ducimus officiis dicta quisquam!</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://images.tcdn.com.br/img/img_prod/848577/a_psicologia_financeira_morgan_housel_81_1_d0a2c940bab65cc1f663fb056f6874ff.jpg" class="card-img-top" alt="..." height="340px">
+                        <div class="card-body">
+                          <h5 class="card-title">psicologia financeira</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam doloremque quo alias impedit ut quia, placeat saepe fugiat a cumque reprehenderit. Rem praesentium officiis tenetur tempore, obcaecati voluptatum eum.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://images.tcdn.com.br/img/img_prod/1323385/kit_2_livros_forjando_almas_forjados_em_deus_seja_mais_esperto_que_o_diabo_estrategias_para_derrotar_29591_2_cc4951a0964e8f1a82382dacc5639a5d.jpg" class="card-img-top" alt="..." height="340px">
+                        <div class="card-body">
+                          <h5 class="card-title">Mais esperto que o diabo</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam doloremque quo alias impedit ut quia, placeat saepe fugiat a cumque reprehenderit. Rem praesentium officiis tenetur tempore, obcaecati voluptatum eum.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.dooca.store/81243/products/qxmlfjzb2l0x8stlsewuuilaavlsfzxndpix.jpg?v=1680798847" class="card-img-top" alt="..." height="340px">
+                        <div class="card-body">
+                          <h5 class="card-title">O homem mais rico</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam doloremque quo alias impedit ut quia, placeat saepe fugiat a cumque reprehenderit. Rem praesentium officiis tenetur tempore, obcaecati voluptatum eum.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.awsli.com.br/600x450/355/355544/produto/275418577/biblia-de-estudo-naa-tamanho-medio-capa-azul-8sk5qw1lng.jpg" class="card-img-top" alt="..." height="340px">
+                        <div class="card-body">
+                          <h5 class="card-title">Bíblia</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam doloremque quo alias impedit ut quia, placeat saepe fugiat a cumque reprehenderit. Rem praesentium officiis tenetur tempore, obcaecati voluptatum eum.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalogoAcessorios">
+                    <div class="card" style="width: 18rem;" id="acessorios">
+                        <img src="https://images.tcdn.com.br/img/img_prod/482052/kit_3_pecas_para_banheiro_dourado_em_ceramica_7787_mart_collection_7296_1_20180625112130.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Kit 3 peças para banheiro</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam doloremque quo alias impedit ut quia, placeat saepe fugiat a cumque reprehenderit. Rem praesentium officiis tenetur tempore, obcaecati voluptatum eum.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://down-br.img.susercontent.com/file/6c135e9a4363588151af169c0a8dccfa" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Soleira da mala</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam doloremque quo alias impedit ut quia, placeat saepe fugiat a cumque reprehenderit. Rem praesentium officiis tenetur tempore, obcaecati voluptatum eum.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://images.tcdn.com.br/img/img_prod/968316/capa_para_celular_space_colletion_anti_impacto_transparente_2385_1_53b559f0850e350ff117ef84a17c2a91.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Capa para celular</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam doloremque quo alias impedit ut quia, placeat saepe fugiat a cumque reprehenderit. Rem praesentium officiis tenetur tempore, obcaecati voluptatum eum.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cyclezone.com.br/image/cache/catalog/produtos/13216/alforge-attack-sahoo-01-700x700.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Bolsa BikePacking</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam doloremque quo alias impedit ut quia, placeat saepe fugiat a cumque reprehenderit. Rem praesentium officiis tenetur tempore, obcaecati voluptatum eum.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://images.tcdn.com.br/img/img_prod/1042561/retrovisor_gtx_par_azul_honda_gvs_17633_1_9b8c16af1b85185c9c223b518b45b5bd_20220704103528.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Retrovisor GTX</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam doloremque quo alias impedit ut quia, placeat saepe fugiat a cumque reprehenderit. Rem praesentium officiis tenetur tempore, obcaecati voluptatum eum.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://topdaboleia.com.br/wp-content/uploads/2022/01/15096641720_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Par para-lama</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam doloremque quo alias impedit ut quia, placeat saepe fugiat a cumque reprehenderit. Rem praesentium officiis tenetur tempore, obcaecati voluptatum eum.</p>
+                          <a href="#" class="btn btn-primary">Compre Agora!</a>
+                        </div>
+                    </div>
+                </div>
             <br>
         </section>
-
+<hr>
         <section id="contatos" class="contato">
             <div class="formulario">
                 <form action="#" method="post">
@@ -96,7 +346,7 @@
                         <br>
                     </div>
                     <br>
-                    <button class="button-form">Enviar</button>
+                    <button type="button" class="btn btn-outline-primary">Enviar</button>
                 </form>
             </div>
 
@@ -119,6 +369,6 @@
         </nav>
         <p>2025 Minha loja. Todos os direitos reservados</p>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
