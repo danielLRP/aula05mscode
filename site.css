@@ -74,25 +74,8 @@ header {
     margin-top: 50px;
 }
 
-.categorias {
-    text-align: center;
-    margin: 50px 0 60px 0;
-}
-
-.categorias h1 {
-    padding: 20px;
-    color: #444;
-}
-
-.categorias ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-}
-
-.categorias li {
-    list-style: none;
+.categoriasProdutos {
+    margin-left: 20px;
 }
 
 .produtos {
@@ -103,22 +86,31 @@ header {
 
 .produtos h1 {
     color: #444;
+    margin-bottom: 50px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 35px;
-    box-shadow: 2px 2px 1em #999;
+.catalogo-de-produtos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
-table th {
-    padding: 20px;
-    background-color: darkgray;
+.catalogoDeProdutos-coluna2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
-table td {
-    padding: 30px;
+.catalogoLivros{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.catalogoAcessorios {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .img { 
